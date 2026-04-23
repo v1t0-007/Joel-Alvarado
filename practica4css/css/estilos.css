@@ -1,0 +1,19 @@
+h1{
+    font-family: "PlayFair Display", serif;
+    font-weight:  900;
+    font-style: italic;
+    font-size: 7rem;
+
+}
+
+h2{
+    font-family: "PlayFair Display", serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p{
+    font-family: "Montserrat",serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
