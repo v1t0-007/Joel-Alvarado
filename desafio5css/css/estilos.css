@@ -1,0 +1,16 @@
+.tarjeta{
+     border-style: solid;
+    border-radius: 10px;
+    border-color: red;
+    border-width: 5px;
+
+    width: 50%;
+    margin: 25px auto 25px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box  ;
+}
+img{
+    width: 75%;
+    
+}
