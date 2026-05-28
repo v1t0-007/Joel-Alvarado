@@ -1,0 +1,27 @@
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial;
+}
+.header {
+text-align: center;
+padding: 32px;
+}
+/*El contenedor para los elementos flex, usamos flex wrap*/
+.container {
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
+}
+/* Crea 4 columnas de igual tamaño que se colocan una junto a otra */
+.column {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
+}
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+}
