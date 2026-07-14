@@ -1,0 +1,94 @@
+:root {
+--bg-color: #ffffff;
+--card-bg: #150a71;
+--text-main: #ffffff;
+--text-muted: #94a3b8;
+--accent: #10b981;
+}
+body {
+background-color: var(--bg-color);
+color: var(--text-main);
+font-family: system-ui, -apple-system, sans-serif;
+margin: 0;
+padding: 20px;
+}
+.container {
+max-width: 1100px;
+margin: 0 auto;
+}
+
+header {
+text-align: center;
+margin-bottom: 40px;
+}
+header h1 {
+color: var(--accent);
+margin-bottom: 25px;
+}
+header p {
+color: var(--text-muted);
+margin: 0;
+}
+
+/* Grid de Tarjetas */
+.grid-personajes {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 
+1fr));
+gap: 25px;
+}
+.card {
+background-color: var(--card-bg);
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+transition: transform 0.2s;
+}
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+.card-info {
+padding: 15px;
+}
+.card-info h3 {
+margin: 0 0 10px 0;
+font-size: 1.2rem;
+}
+.card-info small {
+color: var(--text-muted);
+display: block;
+margin-top: 10px;
+}
+.card-info .location {
+font-size: 0.9rem;
+margin: 2px 0 0 0;
+}
+/* Estados de Vida (Puntito) */
+.status-dot {
+display: inline-block;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+margin-right: 6px;
+}
+.status-dot.alive { background-color: #22c55e; }
+.status-dot.dead { background-color: #ef4444; }
+.status-dot.unknown { background-color: #64748b; }
+/* Mensajes de pantalla entera */
+.pantalla-estado {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh;
+font-size: 1.3rem;
+color: var(--text-muted);
+}
+.pantalla-estado.error {
+color: #ef4444;
+}
